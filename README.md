@@ -61,10 +61,6 @@ npm run test
 ```
 
 
-```bash
-npm run lint:dev
-```
-
 <h3>ENDPOINTS</h3>
 <hr>
 <table>
