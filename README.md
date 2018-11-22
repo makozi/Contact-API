@@ -4,7 +4,7 @@
 An API for developers Contact Directory
 
 
-[![Build Status](https://travis-ci.org/makozi/Contact-API.svg?branch=develop)](https://travis-ci.org/makozi/Contact-API)
+
 [![Maintainability](https://api.codeclimate.com/v1/badges/470a72818d7f1c6f0dbd/maintainability)](https://codeclimate.com/github/makozi/Contact-API/maintainability)
 
 
@@ -22,7 +22,6 @@ You need to have these installed before cloning the project
 
 ## Technologies Used
 - [Eslint](https://eslint.org/)
-- [TravisCI](https://travis-ci.org/)
 - [Nodejs](https://nodejs.org/en/)
 - [Express](https://expressjs.com/)
 - [Code-Climate](https://codeclimate.com/)
@@ -79,11 +78,7 @@ npm run lint:dev
       <td>/api/v1/contacts</td>
       <td>Create a new contact</td>
   </tr>
- <tr>
-      <td>PUT</td>
-      <td>/api/v1/contacts/:id</td>
-      <td>Update a contact by contactid</td>
-  </tr>
+
   <tr>
       <td>GET</td>
       <td>/api/v1/contacts</td>
@@ -94,6 +89,12 @@ npm run lint:dev
         <td>/api/v1/contacts/:id</td>
         <td>Get a contact by contactid</td>
   </tr>
+   <tr>
+      <td>PUT</td>
+      <td>/api/v1/contacts/:id</td>
+      <td>Update a contact by contactid</td>
+  </tr>
+ 
   <tr>
         <td>DELETE</td>
         <td>/api/v1/contacts/:id</td>
@@ -111,19 +112,19 @@ npm run lint:dev
 
 ## Create A Contact
 
-![screencast](assets/images/create.PNG)
+![screencast](src/assets/images/create.PNG)
 
 ## Get All Contacts
 
-![screencast](assets/images/get-all.PNG)
+![screencast](src/assets/images/get-all.PNG)
 
 ## Get A  Contact
 
-![screencast](assets/images/get.PNG)
+![screencast](src/assets/images/get.PNG)
 
 ## Update A  Contact
 
-![screencast](assets/images/update.PNG)
+![screencast](src/assets/images/update.PNG)
 
 
 ## Author
