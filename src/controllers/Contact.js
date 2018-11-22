@@ -9,7 +9,10 @@ const Contact = {
      */
     create(req, res) {
         if (!req.body.name && !req.body.phoneNo && !req.body.email && !req.body.website && !req.body.role && !req.body.githubAccount) {
-            return res.status(400).send({ 'message': 'All fields are required' });
+            return res.status(400).json({
+                status: '404',
+                message: 'All fields required'
+            });
         }
         const contact = ContactModel.create(req.body);
         return res.status(201).send(contact);
@@ -33,7 +36,10 @@ const Contact = {
     getOne(req, res) {
         const contact = ContactModel.findOne(req.params.id);
         if (!contact) {
-            return res.status(404).send({ 'message': 'contact not found' });
+            return res.status(404).json({
+                status: '404',
+                message: 'contact  not found'
+            });
         }
         return res.status(200).send(contact);
     },
@@ -46,7 +52,10 @@ const Contact = {
     update(req, res) {
         const contact = ContactModel.findOne(req.params.id);
         if (!contact) {
-            return res.status(404).send({ 'message': 'contact not found' });
+            return res.status(404).json({
+                status: '404',
+                message: 'contact  not found'
+            });
         }
         const updatedContact = ContactModel.update(req.params.id, req.body);
         return res.status(200).send(updatedContact);
@@ -60,7 +69,10 @@ const Contact = {
     delete(req, res) {
         const contact = ContactModel.findOne(req.params.id);
         if (!contact) {
-            return res.status(404).send({ 'message': 'contact not found' });
+            return res.status(404).json({
+                status: '404',
+                message: 'contact  not found'
+            });
         }
         const ref = ContactModel.delete(req.params.id);
         return res.status(204).send(ref);
