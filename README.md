@@ -107,6 +107,25 @@ npm run lint:dev
 </table>
 <br>
 
+##### Testing Endpoints in POSTMAN
+
+## Create A Contact
+
+![screencast](assets/images/create.PNG)
+
+## Get All Contacts
+
+![screencast](assets/images/get-all.PNG)
+
+## Get A  Contact
+
+![screencast](assets/images/get.PNG)
+
+## Update A  Contact
+
+![screencast](assets/images/update.PNG)
+
+
 ## Author
 [Marizu-Ibewiro Makozi](https://makozi.netlify.com)
 
